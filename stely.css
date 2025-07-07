@@ -3,31 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim - Cristiano</title>
+    <title>Meu Portfólio - Cristiano Alan Vieira</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Informações Pessoais</h1>
+        <h1>Portfólio pessoal</h1>
         <nav>
             <ul>
-                
+                <li><a href="Shttps://cristianoala.github.io/meuportifolio/">Sobre Mim</a></li>  
+                <li><a href="https://cristianoala.github.io/minhaformacao/">Formação</a></li>
+                <li><a href="https://cristianoala.github.io/portifolio2/">Portfólio</a></li>
+                <li><a href="https://cristianoala.github.io/contatosaits/">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="sobre-mim">
-            <h2>Quem Sou Eu</h2>
-            <p>Olá, meu nome é Cristiano, tenho 30 anos e sou natural de Curitiba. Atualmente, estou solteiro e focado em minha carreira e estudos. Sempre busco novos aprendizados e estou constantemente me desafiando para crescer profissional e pessoalmente.</p>
+        <section class="introducao">
+            <h2>Introdução</h2>
+            <p>Este é o meu portfólio, onde compartilho um pouco sobre mim, minha formação e meus projetos.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Cristiano - Meu Portfólio</p>
+        <p>&copy; 2024 Cristiano Alan Vieira - Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('mouseover', function() {
+                    this.style.color = 'yellow';
+                });
+
+                link.addEventListener('mouseout', function() {
+                    this.style.color = '';  
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
 <style>
 * {
     margin: 0;
@@ -40,16 +59,15 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 70px; 
+    padding-top: 80px; 
 }
 
-/* Cabeçalho */
 header {
     background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     position: fixed;
     width: 100%;
     top: 0;
@@ -86,14 +104,13 @@ nav ul li a:hover {
     transform: scale(1.1); 
 }
 
-
 main {
     padding: 30px;
     text-align: center;
     margin-top: 100px; 
 }
 
-.sobre-mim {
+.introducao {
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
@@ -103,24 +120,23 @@ main {
     transition: transform 0.3s ease;
 }
 
-.sobre-mim:hover {
-    transform: translateY(-5px);
+.introducao:hover {
+    transform: translateY(-5px); 
 }
 
-.sobre-mim h2 {
+.introducao h2 {
     font-size: 2.5em;
     margin-bottom: 25px;
     color: #333;
     font-weight: bold;
 }
 
-.sobre-mim p {
+.introducao p {
     font-size: 1.3em;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
@@ -130,7 +146,6 @@ footer {
     margin-top: 30px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8em;
@@ -146,17 +161,16 @@ footer {
         margin-right: 15px;
     }
 
-    .sobre-mim {
+    .introducao {
         padding: 20px;
     }
 
-    .sobre-mim h2 {
+    .introducao h2 {
         font-size: 2em;
     }
 
-    .sobre-mim p {
+    .introducao p {
         font-size: 1.1em;
     }
 }
-
 </style>
